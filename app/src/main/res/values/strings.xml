@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Upscaler Demo</string>
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+    <string name="change">change</string>
+
+</resources>

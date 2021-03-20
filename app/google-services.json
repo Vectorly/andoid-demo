@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851092787174",
+    "project_id": "superstream-6952e",
+    "storage_bucket": "superstream-6952e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851092787174:android:fbc9148c06b9d7f1a9d027",
+        "android_client_info": {
+          "package_name": "io.vectorly.superstream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851092787174-6np3e21lq73kd23g7d61lsi034qdijhn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD66lQyM8RPmpxx3Nx6XeMcPi4L7OCjppY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851092787174-6np3e21lq73kd23g7d61lsi034qdijhn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
