@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ePlayerView.setGlFilter(NetworkTypes.createGlFilter(filterTypes.get(position), getApplicationContext()));
+                ePlayerView.setNetwork(filterTypes.get(position), getApplicationContext());
             }
         });
 
@@ -166,8 +166,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setUoGlPlayerView() {
-        ePlayerView = new GlPlayerView(this);
+
+        String api_key = BuildConfig.VECTORLY_API_KEY;
+        ePlayerView = new GlPlayerView(this, api_key);
         ePlayerView.setSimpleExoPlayer(player);
+
+        ePlayerView.setNetwork(NetworkTypes.DEFAULT, getApplicationContext());
         ePlayerView.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         ((MovieWrapperView) findViewById(R.id.layout_movie_wrapper)).addView(ePlayerView);
         ePlayerView.onResume();
